@@ -1,7 +1,5 @@
-git init            INITIALIZE GIT FOLDER  
-git add  
-        .           add all files into staged area      excluding filesmentioned in .gitignore  
-        <filename>  add FILE: [filename] into stages area  
-
-:wq  
-
+| Command            | Description                              |
+|--------------------|------------------------------------------|
+| `git init`         | Initialize Git repository                |
+| `git add .`        | Add all files (except .gitignore)        |
+| `git add <file>`   | Add specific file to staging area        |
