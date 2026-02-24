@@ -1,6 +1,8 @@
+## GIT GENERAL COMMANDS
 | Command            | Description                              |
 |--------------------|------------------------------------------|
 | `git init`         | Initialize Git repository                |
+## Stage & Snapshot
 | `git add .`        | Add all files (except .gitignore)        |
 | `git add <file>`   | Add specific file to staging area        |
 | `git commit`       | Commit the staged files (opens commit msg in default editor)|
@@ -9,4 +11,5 @@
 | `git status` | show modified files in cwd, staged for your next commit |
 | `git diff` | diff of what is changed but not staged |
 | `git diff --staged` | diff of what is staged but not yet commited |
-|  |  |
+## Branch & Merge
+| `git branch` | list |
