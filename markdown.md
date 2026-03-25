@@ -1,90 +1,108 @@
-# Heading               ==          H1
-## Heading              ==          H2
-### Heading             ==          H3
-#### Heading            ==          H4
-##### Heading           ==          H5
-###### Heading          ==          H6
+# MARKDOWN CHEAT SHEET
 
-ALTERNATE SYNTAX
+HEADINGS
 
-HEADING LEVEL 1         ==          H1
-===============
+# Heading                        == H1
+## Heading                       == H2
+### Heading                      == H3
+#### Heading                     == H4
+##### Heading                    == H5
+###### Heading                   == H6
 
-HEADING LEVEL 2         ==          H2
----------------
+ALTERNATE HEADING SYNTAX
 
-THIS IS **BOLD TEXT**   ==          BOLD
-THIS IS ALSO __BOLD__   ==          BOLD
+Heading Level 1
+===============                  == H1
 
-THIS IS *ITALICIZED*    ==          ITALIC
-THIS IS ALSO _ITALIC_   ==          ITALIC
+Heading Level 2
+---------------                  == H2
 
-THIS IS ***BOLD ITALIC*** ==        BOLD + ITALIC
-THIS IS ALSO ___BOLD ITALIC___ ==   BOLD + ITALIC
+TEXT STYLES
 
-~~THIS IS STRIKETHROUGH~~ ==        STRIKETHROUGH
+**Bold text**                    == BOLD
+__Bold text__                    == BOLD
 
-> THIS IS A BLOCKQUOTE   ==         BLOCKQUOTE
->> NESTED BLOCKQUOTE     ==         NESTED BLOCKQUOTE
+*Italic text*                    == ITALIC
+_Italic text_                    == ITALIC
 
-- ITEM ONE               ==         UNORDERED LIST
-- ITEM TWO               ==         UNORDERED LIST
-* ITEM THREE             ==         UNORDERED LIST
-+ ITEM FOUR              ==         UNORDERED LIST
+***Bold italic text***           == BOLD + ITALIC
+___Bold italic text___           == BOLD + ITALIC
 
-1. FIRST ITEM            ==         ORDERED LIST
-2. SECOND ITEM           ==         ORDERED LIST
-3. THIRD ITEM            ==         ORDERED LIST
+~~Strikethrough~~                == STRIKETHROUGH
 
-- [ ] PENDING TASK       ==         TASK LIST
-- [x] COMPLETED TASK     ==         TASK LIST
+INLINE ELEMENTS
 
-`INLINE CODE`            ==         INLINE CODE
+`inline code`                    == INLINE CODE
 
-```                      ==         CODE BLOCK
-CODE BLOCK HERE
+[OpenAI](https://openai.com)     == LINK
+<https://openai.com>             == AUTOMATIC LINK
+![Alt text](image.png)           == IMAGE
+[Link](https://example.com "Title") == LINK WITH TITLE
+
+QUOTES
+
+> This is a blockquote           == BLOCKQUOTE
+>> This is nested                == NESTED BLOCKQUOTE
+
+LISTS
+
+- Item one                       == UNORDERED LIST
+- Item two                       == UNORDERED LIST
+* Item three                     == UNORDERED LIST
++ Item four                      == UNORDERED LIST
+
+1. First item                    == ORDERED LIST
+2. Second item                   == ORDERED LIST
+3. Third item                    == ORDERED LIST
+
+- [ ] Pending task               == TASK LIST
+- [x] Completed task             == TASK LIST
+
+CODE BLOCKS
+
+```                              == CODE BLOCK
+Code block here
 ```
 
-```python                ==         CODE BLOCK WITH LANGUAGE
+```python                        == CODE BLOCK WITH LANGUAGE
 print("Hello, Markdown!")
 ```
 
-[OPENAI](https://openai.com) ==     LINK
+HORIZONTAL RULES
 
-<https://openai.com>     ==         AUTOMATIC LINK
+---                              == HORIZONTAL RULE
+***                              == HORIZONTAL RULE
+___                              == HORIZONTAL RULE
 
-![ALT TEXT](image.png)   ==         IMAGE
+ESCAPING CHARACTERS
 
-[CLICK HERE](https://example.com "TITLE") == LINK WITH TITLE
+\* Not italic \*                 == ESCAPING CHARACTERS
+\# Not a heading                 == ESCAPING CHARACTERS
+\[Not a link\]                   == ESCAPING CHARACTERS
 
----
-==                              HORIZONTAL RULE
+TABLES
 
-***
-==                              HORIZONTAL RULE
-
-___
-==                              HORIZONTAL RULE
-
-\* NOT ITALIC \*         ==         ESCAPING CHARACTERS
-\# NOT A HEADING         ==         ESCAPING CHARACTERS
-
-| NAME | AGE | CITY |    ==         TABLE
+| Name | Age | City |            == TABLE
 |------|-----|------|
-| ALI  | 22  | DELHI |
-| SARA | 25  | PARIS |
+| Ali  | 22  | Delhi |
+| Sara | 25  | Paris |
 
-| LEFT | CENTER | RIGHT | ==       TABLE ALIGNMENT
+| Left | Center | Right |        == TABLE ALIGNMENT
 |:-----|:------:|------:|
-| A    | B      | C      |
+| A    | B      | C     |
 
-FOOTNOTE EXAMPLE[^1]     ==         FOOTNOTE
+FOOTNOTES
 
-[^1]: THIS IS THE FOOTNOTE ==       FOOTNOTE DEFINITION
+Footnote example[^1]             == FOOTNOTE
+[^1]: This is the footnote       == FOOTNOTE DEFINITION
 
-TERM
-: DEFINITION             ==         DEFINITION LIST
+DEFINITION LIST
 
-<mark>HIGHLIGHT</mark>   ==         HTML INSIDE MARKDOWN
-<sub>SUBSCRIPT</sub>     ==         HTML INSIDE MARKDOWN
-<sup>SUPERSCRIPT</sup>   ==         HTML INSIDE MARKDOWN
+Term                             == TERM
+: Definition                     == DEFINITION
+
+HTML INSIDE MARKDOWN
+
+<mark>Highlight</mark>           == HIGHLIGHT USING HTML
+<sub>Subscript</sub>             == SUBSCRIPT USING HTML
+<sup>Superscript</sup>           == SUPERSCRIPT USING HTML
