@@ -1,108 +1,170 @@
-# MARKDOWN CHEAT SHEET
+# Markdown Cheat Sheet
 
-HEADINGS
+This file shows Markdown syntax as literal text, so the examples do not break while you read them.
 
-# Heading                        == H1
-## Heading                       == H2
-### Heading                      == H3
-#### Heading                     == H4
-##### Heading                    == H5
-###### Heading                   == H6
+## Headings
 
-ALTERNATE HEADING SYNTAX
+| Syntax | Meaning |
+|---|---|
+| ``# Heading`` | H1 |
+| ``## Heading`` | H2 |
+| ``### Heading`` | H3 |
+| ``#### Heading`` | H4 |
+| ``##### Heading`` | H5 |
+| ``###### Heading`` | H6 |
 
-Heading Level 1
-===============                  == H1
+## Alternate Heading Syntax
 
-Heading Level 2
----------------                  == H2
+| Syntax | Meaning |
+|---|---|
+| ``Heading Level 1``<br>``===============`` | H1 |
+| ``Heading Level 2``<br>``---------------`` | H2 |
 
-TEXT STYLES
+## Text Styles
 
-**Bold text**                    == BOLD
-__Bold text__                    == BOLD
+| Syntax | Meaning |
+|---|---|
+| ``**Bold text**`` | Bold |
+| ``__Bold text__`` | Bold |
+| ``*Italic text*`` | Italic |
+| ``_Italic text_`` | Italic |
+| ``***Bold italic text***`` | Bold + Italic |
+| ``___Bold italic text___`` | Bold + Italic |
+| ``~~Strikethrough~~`` | Strikethrough |
 
-*Italic text*                    == ITALIC
-_Italic text_                    == ITALIC
+## Inline Elements
 
-***Bold italic text***           == BOLD + ITALIC
-___Bold italic text___           == BOLD + ITALIC
+| Syntax | Meaning |
+|---|---|
+| `` `inline code` `` | Inline code |
+| ``[OpenAI](https://openai.com)`` | Link |
+| ``<https://openai.com>`` | Automatic link |
+| ``![Alt text](image.png)`` | Image |
+| ``[Link](https://example.com "Title")`` | Link with title |
 
-~~Strikethrough~~                == STRIKETHROUGH
+## Blockquotes
 
-INLINE ELEMENTS
+| Syntax | Meaning |
+|---|---|
+| ``> This is a blockquote`` | Blockquote |
+| ``>> This is nested`` | Nested blockquote |
 
-`inline code`                    == INLINE CODE
+## Lists
 
-[OpenAI](https://openai.com)     == LINK
-<https://openai.com>             == AUTOMATIC LINK
-![Alt text](image.png)           == IMAGE
-[Link](https://example.com "Title") == LINK WITH TITLE
+### Unordered List
 
-QUOTES
+```text
+- Item one
+- Item two
+* Item three
++ Item four
+```
 
-> This is a blockquote           == BLOCKQUOTE
->> This is nested                == NESTED BLOCKQUOTE
+### Ordered List
 
-LISTS
+```text
+1. First item
+2. Second item
+3. Third item
+```
 
-- Item one                       == UNORDERED LIST
-- Item two                       == UNORDERED LIST
-* Item three                     == UNORDERED LIST
-+ Item four                      == UNORDERED LIST
+### Task List
 
-1. First item                    == ORDERED LIST
-2. Second item                   == ORDERED LIST
-3. Third item                    == ORDERED LIST
+```text
+- [ ] Pending task
+- [x] Completed task
+```
 
-- [ ] Pending task               == TASK LIST
-- [x] Completed task             == TASK LIST
+## Code Blocks
 
-CODE BLOCKS
+### Basic Code Block
 
-```                              == CODE BLOCK
+````text
+```text
 Code block here
 ```
+````
 
-```python                        == CODE BLOCK WITH LANGUAGE
+### Code Block With Language
+
+````text
+```python
 print("Hello, Markdown!")
 ```
+````
 
-HORIZONTAL RULES
+## Horizontal Rules
 
----                              == HORIZONTAL RULE
-***                              == HORIZONTAL RULE
-___                              == HORIZONTAL RULE
+```text
+---
+***
+___
+```
 
-ESCAPING CHARACTERS
+## Escaping Characters
 
-\* Not italic \*                 == ESCAPING CHARACTERS
-\# Not a heading                 == ESCAPING CHARACTERS
-\[Not a link\]                   == ESCAPING CHARACTERS
+| Syntax | Meaning |
+|---|---|
+| ``\* Not italic \*`` | Show special characters without formatting |
+| ``\# Not a heading`` | Prevent heading formatting |
+| ``\[Not a link\]`` | Prevent link formatting |
 
-TABLES
+## Tables
 
-| Name | Age | City |            == TABLE
-|------|-----|------|
-| Ali  | 22  | Delhi |
-| Sara | 25  | Paris |
+### Basic Table
 
-| Left | Center | Right |        == TABLE ALIGNMENT
-|:-----|:------:|------:|
-| A    | B      | C     |
+````text
+| Name | Age | City |
+|---|---|---|
+| Ali | 22 | Delhi |
+| Sara | 25 | Paris |
+````
 
-FOOTNOTES
+### Table Alignment
 
-Footnote example[^1]             == FOOTNOTE
-[^1]: This is the footnote       == FOOTNOTE DEFINITION
+````text
+| Left | Center | Right |
+|:---|:---:|---:|
+| A | B | C |
+````
 
-DEFINITION LIST
+## Footnotes
 
-Term                             == TERM
-: Definition                     == DEFINITION
+```text
+Footnote example[^1]
 
-HTML INSIDE MARKDOWN
+[^1]: This is the footnote
+```
 
-<mark>Highlight</mark>           == HIGHLIGHT USING HTML
-<sub>Subscript</sub>             == SUBSCRIPT USING HTML
-<sup>Superscript</sup>           == SUPERSCRIPT USING HTML
+## Definition List
+
+```text
+Term
+: Definition
+```
+
+Note: definition lists are supported in some Markdown flavors, not all.
+
+## HTML Inside Markdown
+
+| Syntax | Meaning |
+|---|---|
+| ``<mark>Highlight</mark>`` | Highlight using HTML |
+| ``<sub>Subscript</sub>`` | Subscript using HTML |
+| ``<sup>Superscript</sup>`` | Superscript using HTML |
+
+## Quick Practice Example
+
+````text
+# My Notes
+
+## Today
+
+- Learn headings
+- Learn lists
+- Learn links
+
+> Markdown is easy once the syntax is visible.
+
+Visit [OpenAI](https://openai.com)
+````
